@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #f1f2f6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  text-align: center;  
+  padding: 15px;  
+  background-color: #56595a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {  
+  text-align: center;
+  margin: 25px 15px;
+  border: 1px solid #56595a;
+  width: 30vw;
+  height: 300px;
+  background-color: #fff;
+  color: #474A4B;
+}
+
+.card.active {
+  border: 2px solid #ff0067;
+  background-color: #ff99c2;
+  color: #ff0067;  
+}
+
+.player-name {
+  margin-top: 60px;
+}
+
+.player-score {
+  font-size: 60px;
+}
+
+.dice-score {
+  margin: 20px auto 0;
+  padding: 25px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color:  #56595a;
+  color: #f1f2f6;
+  font-size: 30px;
+}
+
+.round-score {
+  font-size: 30px;
+}
+
+.btn {
+  /* margin: 5px 0 5px 10px; */
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.btn:hover {
+  border: 1px solid #adadad;
+  background-color: #e6e6e6;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn.btn-danger {
+  border: 1px solid #d43f3a;
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.btn.btn-danger:hover {
+  border: 1px solid #ac2925;
+  background-color: #c9302c;  
+}
+
+.btn.btn-success {
+  border: 1px solid #4cae4c;
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.btn.btn-success:hover {
+  border: 1px solid #398439;
+  background-color: #449d44;  
+}
+
+.btn-fw {
+  width: 80px;
+  margin-right: 10px 
 }
