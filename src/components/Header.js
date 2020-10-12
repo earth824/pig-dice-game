@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Header() {
+function Header({ reset }) {
   return (
     <div className="header">
-      <button className="btn">New Game</button>
+      <button
+        className="btn"
+        onClick={reset}>New Game</button>
     </div>
   );
 }
